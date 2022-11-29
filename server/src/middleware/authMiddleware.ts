@@ -12,6 +12,5 @@ export const isAuth: MiddlewareFn<MyContext>= async ({ context }, next: NextFn) 
    if(!user){
       throw new Error('not authenticated')
    }
-   
    return next()
 }
